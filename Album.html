@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Photo Album</title>
+    <link rel="stylesheet" href="yash1.css">
+    <script defer src="yash2.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>My Friend's Photo Album</h1>
+    </header>
+
+    <section class="gallery">
+        <div class="photo"><img src="images/photo1.jpg" alt="Photo 1" onclick="openLightbox(this.src)"></div>
+        <div class="photo"><img src="images/photo2.jpg" alt="Photo 2" onclick="openLightbox(this.src)"></div>
+        <div class="photo"><img src="images/photo3.jpg" alt="Photo 3" onclick="openLightbox(this.src)"></div>
+        <div class="photo"><img src="images/photo4.jpg" alt="Photo 4" onclick="openLightbox(this.src)"></div>
+        <div class="photo"><img src="images/photo5.jpg" alt="Photo 5" onclick="openLightbox(this.src)"></div>
+        <div class="photo"><img src="images/photo6.jpg" alt="Photo 6" onclick="openLightbox(this.src)"></div>
+    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Friend's Album | Designed by @sam_slayer303</p>
+    </footer>
+
+</body>
+</html>
